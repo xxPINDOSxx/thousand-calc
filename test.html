@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="disp">UNCHANGED</h1>
+
+    <label>inputOne</label><input type="number" id="inputOne" oninput = displayInp(value) >
+    <br>
+    <label>inputTwo</label><input type="text" id="inputTwo" oninput= displayInp(value)>
+    <br>
+
+    <button type="button" id="buttonOne" onclick = display(id)>buttonOne</button>
+    <button type="button" id="buttonTwo" onclick = display(id)>buttonOne</button>
+
+    <script>
+        function display(data){
+            document.getElementById("disp").innerHTML=data
+            console.log(data)
+        }
+
+        function displayInp(data){
+            document.getElementById("disp").innerHTML=data
+            
+        }
+    </script>
+
+
+</body>
+</html>
